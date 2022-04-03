@@ -1,0 +1,117 @@
+body{
+    margin: 0px;
+}
+.head{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.drop{
+    appearance: none;
+    border-width: 0px;
+    color: blue;
+}
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-weight: bolder;
+    font-size:3vw;
+    color: navy;
+    margin-left: 50px;
+}
+.humberger,.data1{
+    display: none;
+}
+.data1 table{
+    width: 200px;
+    height: 270px;
+}
+.data1 table tr td{
+    background-color: cornsilk;
+    padding-left: 38px;
+    border-bottom: 1px solid black;
+}
+.head ul li{
+    display: inline;
+    margin-right: 50px;
+}
+.head ul{
+    display: inline;
+    margin-top: 18px;
+}
+.head a{
+    text-decoration: none;
+    font-size: larger;
+}
+.hero1{
+    height: 82vh;
+    background-image: url('../images/carwash.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-size: larger;
+    font-weight: bolder;
+}
+.hero1_link{
+    text-decoration: none;
+    color:yellow;
+    font-size: larger;
+    font-weight: bolder;
+}
+.footer{
+    height: 160px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: white;
+    background-color:#1B1B1B;
+}
+.f1{
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width:1160px){
+    .head ul{
+        display: none;
+    }
+    .data1{
+        position: absolute; 
+        top: 71px;
+        right: 5vw;
+    }
+    .humberger{
+        display: inline;
+        font-size: 36px;
+        margin-right: 50px;
+    }
+    .data1 table td:hover{
+        background-color: rgb(248, 229, 229);
+    }
+}
+@media (max-width:725px){
+    .logo{
+        font-size: 20px;
+    }
+}
+@media (max-width:346px){
+    .logo{
+        margin-left: 5px;
+    }
+    .humberger{
+        font-size: 25px;
+    }
+    .f1{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        height: 200px;
+    }
+}

@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <title>carwasher</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .payment{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            height: 400px;
+        }
+        .img{
+            
+            width: 300px;
+            height: 343px;
+            margin-top: 70px;
+        }
+        .ac{
+            
+            width: 300px;
+            height: 343px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="main">
+        <section class="head">
+            <span class="logo">
+                CARWASHER.COM
+            </span>
+            <ul>
+                <li><a href="http://localhost:8000/">Home</a></li>
+                <li>
+                    <select name="" class="drop">
+                        <option value="">Service Area</option>
+                        <option value="">Delhi</option>
+                        <option value="">Haryana</option>
+                    </select>    
+                </li>
+                <li><a href="http://localhost:8000/price/">Monthly Price</a></li>
+                <li><a href="http://localhost:8000/take_service/">Take Service</a></li>
+                <li><a href="http://localhost:8000/payment/">Payment</a></li>
+                <li><a href=""><button class="btn btn-success">Sign In</button></a></li>
+            </ul>
+            <span class="humberger" onclick="humberg1()" id="hm1"><i class="fas fa-bars"></i></span>
+            <div class="data1" id="tab1">
+                <table >
+                    <tr><td><a href="http://localhost:8000/">Home</a></td></tr>
+                    <tr><td><a href="">Service Area</a></td></tr>
+                    <tr><td><a href="http://localhost:8000/price/">Monthly Price</a></td></tr>
+                    <tr><td><a href="http://localhost:8000/take_service/">Take Service</a></td></tr>
+                    <tr><td><a href="http://localhost:8000/payment/">Payment</a></td></tr>
+                    <tr><td><a href="">Sign In</a></td></tr>
+                </table>
+            </div>
+        </section>
+        <div class="payment">
+            <div class="img"><img src="{% static 'images/phonepay.png'%}" class="img-thumbnail" alt=""></div>
+            <div class="ac">BANK : PUNJAB NATIONAL BANK<br>
+            ACCOUNT NO : 13972413000404<br>
+            IFSC CODE : PUNB0139710 
+            </div>
+        </div>
+    </section>
+    <script src="{% static 'javascript/home.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
